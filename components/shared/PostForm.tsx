@@ -29,6 +29,7 @@ type PostFormProps = {
 }
 
 const PostForm = ({ userId, type, post, postId }: PostFormProps) => {
+  
   const [files, setFiles] = useState<File[]>([])
   const initialValues = post && type === 'Update' 
     ? { 

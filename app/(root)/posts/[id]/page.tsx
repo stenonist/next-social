@@ -84,9 +84,6 @@ const PostDetails = async ({
 						</div>
 
 						<div className="flex flex-col gap-2">
-							<p className="p-bold-20 text-grey-600">
-								What You'll Learn:
-							</p>
 							<p className="p-medium-16 lg:p-regular-18">
 								{post.description}
 							</p>

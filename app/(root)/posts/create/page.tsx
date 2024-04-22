@@ -4,6 +4,7 @@ import { auth } from "@clerk/nextjs";
 const CreatePost = () => {
 	const { sessionClaims } = auth();
     const userId = sessionClaims?.userId as string;
+	
 
 	return (
 		<>
