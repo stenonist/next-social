@@ -12,7 +12,7 @@ import NavItems from "./NavItems";
 
 const MobileNavItems = () => {
 	return (
-		<nav className="md:hidedn">
+		<nav className="md:hidden">
 			<Sheet>
 				<SheetTrigger className="align-middle">
                     <Image src="/assets/icons/menu.svg" alt="menu" width={24} height={24} className="cursor-pointer" />

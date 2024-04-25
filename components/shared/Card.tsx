@@ -46,27 +46,16 @@ const Card = ({ post }: CardProps) => {
           </p>
         </div>
 
-        <p className="p-medium-16 p-medium-18 text-grey-500">
-          {/* ADD REGULAR DATE */}
-          {formatDateTime(post.createdAt).dateTime}
-        </p>
 
         <Link href={`/posts/${post._id}`}>
-          <p className="p-medium-16 md:p-medium-20 line-clamp-2 flex-1 text-black">{post.title}</p>
+          <p className="p-medium-16 md:p-medium-20 line-clamp-2 flex-1 text-black">{post.title} by {post.author.firstName} {post.author.lastName}</p>
         </Link>
-
-        <div className="flex-between w-full">
-          <p className="p-medium-14 md:p-medium-16 text-grey-600">
-            {post.author.firstName} {post.author.lastName}
-          </p>
-
-          {/* {hasOrderLink && (
-            <Link href={`/orders?postId=${post._id}`} className="flex gap-2">
-              <p className="text-primary-500">Order Details</p>
-              <Image src="/assets/icons/arrow.svg" alt="search" width={10} height={10} />
-            </Link>
-          ) }*/}
+        <div className='line-clamp-2 text-base h-12 text-grey-500'>
+          {post.description}
         </div>
+        <p className="p-medium-16 p-medium-18 text-grey-500">
+          Posted: {formatDateTime(post.createdAt).dateTime}
+        </p>
       </div>
     </div>
   )
