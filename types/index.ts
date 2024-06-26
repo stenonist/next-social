@@ -88,32 +88,6 @@ export type CreateUserParams = {
     categoryName: string
   }
   
-  // ====== ORDER PARAMS
-  // export type CheckoutOrderParams = {
-  //   postTitle: string
-  //   postId: string
-  //   buyerId: string
-  // }
-  
-  // export type CreateOrderParams = {
-  //   stripeId: string
-  //   postId: string
-  //   buyerId: string
-  //   totalAmount: string
-  //   createdAt: Date
-  // }
-  
-  // export type GetOrdersByPostParams = {
-  //   postId: string
-  //   searchString: string
-  // }
-  
-  // export type GetOrdersByUserParams = {
-  //   userId: string | null
-  //   limit?: number
-  //   page: string | number | null
-  // }
-  
   // ====== URL QUERY PARAMS
   export type UrlQueryParams = {
     params: string
