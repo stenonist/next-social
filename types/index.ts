@@ -15,7 +15,7 @@ export type CreateUserParams = {
     photo: string
   }
   
-  // ====== EVENT PARAMS
+  // ====== POST PARAMS
   export type CreatePostParams = {
     userId: string
     post: {
