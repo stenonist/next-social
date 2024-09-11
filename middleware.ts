@@ -4,9 +4,10 @@ export default authMiddleware({
   publicRoutes: [
     '/',
     '/posts/:id',
+    '/assets/images/favicon.ico',
     '/assets/images/logo.svg',
     '/favicon.ico',
-    '/assets/images/hero.png',
+    '/assets/images/vision.png',
     '/assets/images/dotted-pattern.png',
     '/assets/icons/search.svg',
     '/api/webhooks/clerk',

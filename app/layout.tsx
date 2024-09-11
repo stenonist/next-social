@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Next Social",
   description: "Media Platform built with Next",
   icons:{
-    icon: '/assets/images/logo.svg'
+    icon: '/assets/images/favicon.ico',
   }
 };
 

@@ -1,11 +1,11 @@
-import CategoryFilter from '@/components/shared/CategoryFilter';
-import Collection from '@/components/shared/Collection'
-import Search from '@/components/shared/Search';
-import { Button } from '@/components/ui/button'
-import { getAllPosts } from '@/lib/actions/post.actions';
-import { SearchParamProps } from '@/types';
-import Image from 'next/image'
-import Link from 'next/link'
+import CategoryFilter from "@/components/shared/CategoryFilter";
+import Collection from "@/components/shared/Collection";
+import Search from "@/components/shared/Search";
+import { Button } from "@/components/ui/button";
+import { getAllPosts } from "@/lib/actions/post.actions";
+import { SearchParamProps } from "@/types";
+import Image from "next/image";
+import Link from "next/link";
 
 const Home = async ({ searchParams }: SearchParamProps) => {
 	const page = Number(searchParams?.page) || 1;
@@ -41,7 +41,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
 						</Button>
 					</div>
 					<Image
-						src="/assets/images/hero.png"
+						src="/assets/images/vision.png"
 						alt="hero"
 						width={1000}
 						height={1000}
