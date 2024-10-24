@@ -16,7 +16,7 @@ const UpdatePost = async ({ params: { id } }: UpdatePostProps) => {
 
   return (
     <>
-      <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
+      <section className="bg-primary-50 shadow-md bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <h3 className="wrapper h3-bold text-center sm:text-left">Update Post</h3>
       </section>
 
